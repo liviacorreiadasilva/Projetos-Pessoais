@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema para Converter Dolar </title>
+
+        <style>
+            body{
+                background: linear-gradient(to left, #B983FF, #99FEFF);
+                text-align: center;
+
+            }
+            h1{
+                color: #6d8dd6;
+                margin-top: 20%;
+                -webkit-text-stroke: 1px;
+                -webkit-text-stroke-color: white;
+                font-size: 3em;
+                font-family: Arial, Helvetica, sans-serif;
+                border-radius: 1em;
+            }
+            input#dolarn1{
+                margin: 12px;
+                color: rgb(15, 15, 15);
+                cursor:auto;
+            }
+            input#realn2{
+                margin: 2px;
+                color: black;
+                background-color: white
+            }
+            input#botao{
+                color: rgb(7, 7, 7);
+                background-color: rgb(239, 205, 255);
+                border-color: rgb(184, 118, 201);
+                border-radius: 2em;
+                cursor: pointer;
+            }
+            input#resultado{
+                background-color: aliceblue;
+
+            }
+        </style>
+
+</head>
+<body>
+    <h1> Money Converter</h1>
+
+    <input type="number" name="dolarn1"  id="dolarn1" placeholder="Dolar Americano" >  
+<b id="simbolo">
+    &lowast; 
+</b>  
+    <input type="number" name="realn2"  id="realn2"  placeholder=" Real Brasileiro 4.70" disabled="" > 
+
+    <input type="button" value="Converter"  onclick="Somar()" id="botao">
+
+    <div id="resultado"></div>
+
+    <script>  /* javascritp*/
+     function Somar(){
+         var americano= window.document.getElementById('dolarn1')
+         var brasil= window.document.getElementById('realn2')
+         var resultado= window.document.getElementById('resultado')
+           /*var para os numeros*/
+        brasil.value= 4.70;   /*valor do dolar no brasil é 4.70...*/
+         var n1= Number(americano.value)
+         var n2= Number(brasil.value)
+         var soma= n1*n2
+         resultado.innerHTML= 'Em real Brasileiro:  ' +soma
+     }
+    </script>
+
+    
+
+</body>
+</html>
