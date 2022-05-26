@@ -1,0 +1,75 @@
+*{
+    margin: 2%;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    outline: none;
+    font-weight: 500;
+    border-radius: 10px;
+   
+}
+form{ /*form calc*/
+    
+    align-items: center;
+    font-size: 20px;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+    background: aquamarine;
+/*fundo colorido atras da calculadora*/
+    background:linear-gradient(to top, rgb(247, 232, 246), rgb(241, 198, 231),rgb(229, 176, 234),rgb(189, 131, 206));
+    border-radius: 10px;
+    border:2px solid rgb(154, 86, 199);
+    box-shadow: 5px 5px 1px rgb(233, 156, 248);
+    width: 450px;
+    height: 310px;
+    padding: 10px;
+    text-align: justify;
+    margin: auto;
+    margin-top: 4%;
+
+}
+body{ /*Titulo h1 e cores do titulo botoes*/
+    text-align: center;
+    color: rgb(42, 161, 165);
+    background: rgb(252, 244, 244);
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: rgb(35, 205, 211);
+    margin-top: 3%;
+    font-size: 20px;
+}
+input{ /*calculadora toda*/
+    margin: 3px;
+    border: 1%;
+}
+input[type=text]{ /*visor da calculadora*/
+    width: calc(100% - 4px); /*100 é a largura do visor e -4 é a largura da borda*/
+    height: 40px;
+    border-color: rgb(250, 178, 246);
+
+}
+input[type=button]{ /* botoes da calculadora*/
+    width: 100px;
+    height: 50px;
+    border-color: rgb(202, 202, 202);
+}
+input[type=button]:hover{ /*cor dos botoes da calculadora quando passa o mouse em cima*/
+    background: rgb(223, 221, 221);
+    cursor: pointer;
+}
+div#calculadora div{
+    display: flex;
+    
+}
+/*cores de fundo atras dos botoes numericos*/
+/* div#primeira{  /*cor de fundo da primeira coluna*/
+    /*background: rgb(247, 232, 246);
+}
+div#segunda{ /*cor de fundo da segunda coluna*/
+    /*background: rgb(241, 198, 231);
+}
+div#terceira{ /*cor de fundo da terceira coluna*/
+   /* background: rgb(229, 176, 234);
+}
+div#quarta{ /*cor de fundo da quarta coluna*/
+    /*background:rgb(189, 131, 206);
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="estilo.css" media="screen"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script lang="JavaScript"  src="calculadora.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1> Calculadora Virtual</h1>
+    </header>
+ 
+<form action=""  name="calc">
+        <div id="calculadora">
+            <input type="text" id="visor" name="visor" >
+            <div id="primeira"> <!--primeira linha com os numeros na calculadora-->
+                <input class="botao-borda" type="button" value="7" onclick="botao(value)"> <!--botao numero 7-->
+                <input class="botao-borda" type="button" value="8" onclick="botao(value)"> <!--botao numero 8-->
+                <input class="botao-borda" type="button" value="9" onclick="botao(value)"> <!--botão numero 9-->
+                <input class="botao-borda" type="button" value="/" onclick="botao(value)"> <!--botao sinal de divisão-->
+                               <!--O onclick é para o botao e o botao(value) vamos usar no javascript-->
+                               <!-- botao é a minha funçao-->
+            </div>
+
+            <div id="segunda"> <!--segunda linha com os numeros na calculadora-->
+                <input class="botao-borda" type="button" value="4" onclick="botao(value)"> <!--botao numero 4-->
+                <input class="botao-borda" type="button" value="5" onclick="botao(value)"> <!--botao numero 5-->
+                <input class="botao-borda" type="button" value="6" onclick="botao(value)"> <!--botao numero 6-->
+                <input class="botao-borda" type="button" value="*" onclick="botao(value)"> <!--botao sinal de multiplicar-->
+            </div>
+
+            <div id="terceira"> <!--terceira linha com os numeros na calculadora-->
+                <input class="botao-borda" type="button" value="1" onclick="botao(value)"> <!--botao numero 1-->
+                <input class="botao-borda" type="button" value="2" onclick="botao(value)"> <!-- botao numero 2-->
+                <input class="botao-borda" type="button" value="3" onclick="botao(value)"> <!--botao numero 3-->
+                <input class="botao-borda" type="button" value="-" onclick="botao(value)"> <!--botao sinal de menos-->
+            </div>
+
+            <div id="quarta"> <!--quarta linha com os botoes na calculadora-->
+                <input class="borda-botao" type="button" value="C" onclick="reseta()"> <!--botão de apagar-->
+                                                                   <!--a funçao reseta é para apagar-->
+                <input class="borda-botao" type="button" value="0" onclick="botao(value)"> <!--botao  numero zero-->
+                <input class="borda-botao" type="button" value="=" onclick="calcula()"> <!--botao sinal de igual-->
+                             <!--função calcula para fazer o calculo dos numeros-->
+                <input class="borda-botao" type="button" value="+" onclick="botao(value)"> <!--botao sinal de mais-->
+
+
+            </div>
+
+        </div>
+</form>
+</body>
+</html>
