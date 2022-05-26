@@ -3,4 +3,5 @@ Projetos Pessoais Desenvolvidos por mim com o proposito de adquirir e colocar as
 
 - SUMÁRIO 
 
->Calculadora 
+>Calculadora Virtual
+>Conversor de Dolár
